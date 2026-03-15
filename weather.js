@@ -71,7 +71,7 @@ async function fetchWeatherData(lat, lon, cityName) {
 // Converter código de condição meteorológica em emoji e descrição
 function getWeatherCondition(weatherId) {
     if (weatherId >= 200 && weatherId < 300) return '⛈️ Tempestade';
-    if (weatherId >= 300 && weatherId < 400) return '🌧️ Chuvisco';
+    if (weatherId >= 300 && weatherId < 400) return '🌧️ Chuviscos';
     if (weatherId >= 500 && weatherId < 600) return '🌧️ Chuva';
     if (weatherId >= 600 && weatherId < 700) return '❄️ Neve';
     if (weatherId >= 700 && weatherId < 800) return '🌫️ Neblina';
@@ -199,7 +199,7 @@ async function updateWeatherData() {
             }
             
             if (typeof showNotification === 'function') {
-                showNotification('Atenção', '⚠️ A usar dados simulados - API meteorológica temporariamente indisponível');
+                showNotification('Atenção', '⚠️ A utilizar dados simulados - API meteorológica temporariamente indisponível');
             }
         }
     } catch (error) {

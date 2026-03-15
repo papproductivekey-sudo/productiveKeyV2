@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = messageInput ? messageInput.value.trim() : '';
 
             if (!userName || !userEmail || !message) {
-                showNotification('Atenção', 'Por favor, preencha todos os campos do feedback.');
+                showNotification('Atenção', 'Por favor, preencha todos os campos do formulário de feedback.');
                 return;
             }
 
@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     message,
                     timestamp: new Date().toLocaleString('pt-PT')
                 });
-                showNotification('Sucesso!', 'Obrigado pelo feedback!');
+                showNotification('Sucesso!', 'Obrigado pelo seu feedback!');
                 form.reset();
             } catch (error) {
-                showNotification('Erro', 'Não foi possível enviar o feedback. Tente novamente.');
+                showNotification('Erro', 'Não foi possível enviar o seu feedback. Por favor, tente novamente.');
             } finally {
                 if (submitBtn) {
                     submitBtn.disabled = false;

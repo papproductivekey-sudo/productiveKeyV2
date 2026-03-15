@@ -16,7 +16,7 @@ function showNotification(title, message, duration = 4000) {
 // Função para rastrear transferências
 function trackDownload() {
     console.log('Transferência iniciada:', new Date().toLocaleString());
-    showNotification('Transferência Iniciada', '📱 A transferência começará brevemente! Verifique o seu gestor de transferências.');
+    showNotification('Transferência Iniciada', 'A transferência começará em breve! Verifique o seu gestor de transferências.');
 
     if (typeof window.pkTrack === 'function') {
         window.pkTrack('download_click');

@@ -48,7 +48,7 @@
         button.type = 'button';
         button.id = 'cookieManageBtn';
         button.className = 'cookie-manage-btn ' + (consent === 'accepted' ? 'accepted' : 'rejected');
-        button.setAttribute('aria-label', 'Mudar opiniao sobre cookies');
+        button.setAttribute('aria-label', 'Mudar opinião sobre cookies');
 
         button.addEventListener('click', function () {
             openConsentPopup();
@@ -70,7 +70,7 @@
         var overlay = document.createElement('div');
         overlay.id = 'cookieConsentOverlay';
         overlay.className = 'cookie-consent-overlay';
-        overlay.innerHTML = '\n            <div class="cookie-consent-popup" role="dialog" aria-modal="true" aria-labelledby="cookieConsentTitle">\n                <div class="cookie-consent-content">\n                    <div class="cookie-consent-text">\n                        <strong id="cookieConsentTitle">Preferencias de Cookies</strong><br>\n                        Este site utiliza recursos de terceiros (YouTube, Botpress, EmailJS e OpenWeatherMap) para funcionalidades essenciais.\n                        Pode aceitar ou recusar a ativacao destes servicos nao essenciais.\n                        Consulte a <a href="politica-privacidade.html">Politica de Privacidade</a>.\n                    </div>\n                    <div class="cookie-consent-actions">\n                        <button type="button" class="cookie-btn cookie-btn-reject" id="cookieRejectBtn">Recusar</button>\n                        <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptBtn">Aceitar</button>\n                    </div>\n                </div>\n            </div>\n        ';
+        overlay.innerHTML = '\n            <div class="cookie-consent-popup" role="dialog" aria-modal="true" aria-labelledby="cookieConsentTitle">\n                <div class="cookie-consent-content">\n                    <div class="cookie-consent-text">\n                        <strong id="cookieConsentTitle">Preferências de Cookies</strong><br>\n                        Este site utiliza recursos de terceiros (YouTube, Botpress, EmailJS e OpenWeatherMap) para funcionalidades essenciais.\n                        Pode aceitar ou recusar a ativação destes serviços não essenciais.\n                        Consulte a <a href="politica-privacidade.html">Política de Privacidade</a>.\n                    </div>\n                    <div class="cookie-consent-actions">\n                        <button type="button" class="cookie-btn cookie-btn-reject" id="cookieRejectBtn">Recusar</button>\n                        <button type="button" class="cookie-btn cookie-btn-accept" id="cookieAcceptBtn">Aceitar</button>\n                    </div>\n                </div>\n            </div>\n        ';
 
         document.body.appendChild(overlay);
 

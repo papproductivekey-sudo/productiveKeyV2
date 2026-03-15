@@ -2361,6 +2361,76 @@ body {
     text-decoration: underline;
 }
 
+.instagram-stats {
+    margin-top: 1rem;
+    background: rgba(249, 250, 251, 0.8);
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    padding: 0.9rem;
+}
+.instagram-stats h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+    color: #1f2937;
+}
+.instagram-stats p {
+    margin: 0.1rem 0 0.6rem;
+    color: #334155;
+}
+.instagram-preview {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+.instagram-followers-box,
+.instagram-videos-box {
+    background: #fff;
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    border-radius: 12px;
+    padding: 0.65rem;
+}
+.followers-label,
+.videos-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+}
+.followers-count {
+    font-size: 1.5rem;
+    color: #0f172a;
+    font-weight: 800;
+}
+.instagram-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+.instagram-post-item {
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 10px;
+    padding: 0.45rem;
+    background: #f8fafc;
+    font-size: 0.85rem;
+}
+.instagram-post-item a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+}
+.instagram-post-item a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .instagram-posts {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 .instagram-support-link {
     display: inline-flex;
     align-items: center;
